@@ -1,0 +1,8 @@
+{
+"AccessKeyID" : "LTAI2HpEtl7hI6Oy",
+"AccessKeySecret" : "JqLv1ofnzrOfY57MzaszK4ktkJiEdl",
+"RoleArn" : "acs:ram::1837848355493004:role/jsuploaduser",
+"BucketName" : "test-wonder",
+"Endpoint" : "http://oss-cn-shenzhen.aliyuncs.com",
+"TokenExpireTime" : "3600"
+}

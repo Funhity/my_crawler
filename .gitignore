@@ -1,0 +1,51 @@
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+application/tmp/*
+
+tmp/*
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+/.idea/
+.project/*
+.project
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+
+######windvix######
+#db ignore
+application/config/database.php
+application/config/redis.php
+#server const ignore
+application/libraries/Consts.php
+/resources/
+/webroot/resources/
+/webroot/open/logs/*
+/developer/doc/
+
+
+######swj######
+/dump.rdb
+/dummy-host.example.com-access_log
+/dummy-host.example.com-error_log
+
+
+application/config/localhost_banma/*.php
+
+application/controllers/api/answer_king_v2/Test.php
+
+*.log

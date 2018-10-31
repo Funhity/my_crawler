@@ -1,0 +1,65 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$config['url']['domain'] = 'http://192.168.3.119:20001';//wonder_knowledge_server domain
+
+$config['redis_idiom']['host'] = 'redis';
+$config['redis_idiom']['port'] = 6379;
+$config['redis_idiom']['password'] = '';
+
+$config['redis_idiom1']['host'] = 'redis';
+$config['redis_idiom1']['port'] = 6379;
+$config['redis_idiom1']['password'] = '';
+
+$config['answer_king']['pay_config'] = array(
+    [
+        'seq'=>0,
+        'title' => "分享到不同的群，挑战机会+1",
+        'number' => '1',//次数
+        'tips' => '每分享1个不同的群，即可免费再挑战1次',//描述
+        'price' => '0',//原价
+        'value' => '0',//金额
+    ],
+    [
+        'seq'=>1,
+        'title' => "挑战1次",
+        'number' => '1',//次数
+        'tips' => '80﹪挑战者挑战1次获得1个娃娃',//描述
+        'price' => '1',//原价
+        'value' => '1',//金额
+    ],
+    [
+        'seq'=>2,
+        'title' => "挑战8次",
+        'number' => '8',
+        'tips' => '90﹪挑战者挑战8次获得3个娃娃',
+        'price' => '8',
+        'value' => '6',
+    ],
+    [
+        'seq'=>3,
+        'title' => "挑战20次",
+        'number' => '20',
+        'tips' => '90﹪挑战者挑战20次获得10个娃娃',
+        'price' => '20',
+        'value' => '15',
+    ],
+    [
+        'seq'=>4,
+        'title' => "挑战30次",
+        'number' => '30',
+        'tips' => '95﹪挑战者挑战30次获得16个娃娃',
+        'price' => '30',
+        'value' => '20',
+    ]
+);
+
+
+
+$config['sess_driver'] = 'redis';
+$config['sess_save_path'] = 'tcp://r-wz9b1010a85a8f24.redis.rds.aliyuncs.com:6379?auth=dK0Ox1JMNn8bcuU8Q0gu2hxq2bd8Y';
+$config['sess_expiration'] = 3600 * 24 * 7;
+$config['sess_time_to_update'] = 3600 * 24;
+$config['sess_regenerate_destroy'] = true;
+
+
